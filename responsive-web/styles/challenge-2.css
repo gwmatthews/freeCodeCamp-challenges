@@ -1,0 +1,77 @@
+:root { font: 20px/1.2 "Roboto", sans-serif; }
+
+/* remove browser defaults */
+
+body,
+body * {
+	margin:          unset;
+	box-sizing:      unset;
+	padding:         unset;
+	font-size:       unset;
+	color:           unset;
+	text-decoration: unset;
+}
+
+/* document-wide style */
+
+:root {
+	--shadow: 1px 2px 3px rgba(10, 4, 4, 0.5);
+	--light-shadow: 1px 2px 3px rgba(10, 4, 4, 0.2);
+}
+
+body{
+
+	background-color: darkgrey;
+	
+} 
+
+main {
+    width: 80%;
+    margin: auto;
+}
+	
+form, #reaction, #had-before {
+
+    display: flex;
+    flex-direction: column;
+}
+
+option {
+    color: black;
+}
+
+/* adjustments for smaller screens */
+	
+@media(min-width: 850px) {
+	#container {
+		max-width: 65%;
+		grid-gap: 8px;
+	}
+}
+	
+@media(min-width: 950px) {
+	#container {
+		max-width: 55%;
+	}
+}
+
+	
+@media(max-width: 600px){
+	#tribute-info, #find-out-more {
+		font-size: 14px;
+	}
+
+	footer {
+		font-size: 12px;
+	}
+}
+
+@media(max-width: 500px){
+	.video{
+		padding-bottom: 36%;
+		width: 48%;
+	}
+}
+	
+	
+
