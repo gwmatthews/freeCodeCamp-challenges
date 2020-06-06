@@ -197,8 +197,8 @@ li {
 .video {
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 24%;
-	width: 32%;
+	padding-bottom: 48%;
+	width: 64%;
 	margin: auto;
 	margin-top: 3em;
 	border-radius: 10px;
@@ -248,7 +248,7 @@ footer {
 	}
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
 	.video{
 		padding-bottom: 66%;
 		width: 88%;
