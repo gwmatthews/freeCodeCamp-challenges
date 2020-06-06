@@ -213,11 +213,12 @@ li {
 
 footer {
 	padding: 20px;
-	background-color: #999;
+	background-color: #a7a7a7;
 	width: 80%;
 	margin: 60px auto;
 	text-align: center;
 	border: 1px dotted black;
+	border-radius: 10px;
 	box-shadow: var(--shadow);
 	font-size: 15px;
 }
