@@ -46,12 +46,41 @@ a:hover {
 
 /* title */
 
+
+/* NEW */
+
 header * {
 	font-family: monospace;
-	font-size: 25px;
-	text-transform: uppercase;
+	font-size: 30px;
+	padding: 20px;
+}
+
+#title{
+position: relative;
+width: 436px;
+margin: 20px auto;
+}
+
+.title-text{
+	position: absolute;
+	padding: 0;
+	color: black;
+	animation-name: typing;
+	animation-duration: 8s;
+	animation-timing-function: steps(24,end);
+	white-space: nowrap;
+    overflow: hidden;
 	
 }
+
+@keyframes typing {
+	from {width:0;}
+	to {width: 436px;}
+	
+}
+
+/* END NEW */
+
 
 #title-container {
 	
