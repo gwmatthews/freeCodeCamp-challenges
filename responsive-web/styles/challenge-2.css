@@ -25,11 +25,30 @@ body{
 	
 } 
 
+h1 {
+	text-align: center;
+	margin: 20px;
+}
+
 main {
     width: 80%;
-    margin: auto;
+	margin: 20px auto;
+	background-color: #eeeeee;
+	padding: 30px;
+	border-radius: 40px;
+	box-shadow: 2px 2px 3px black;
 }
 	
+form {
+
+padding: 10px;
+
+border: 6px solid #99aabb;
+border-radius: 30px;
+background: linear-gradient(180deg, #ccddee, #99aabb);
+
+}
+
 form, #reaction, #had-before {
 
     display: flex;
@@ -38,6 +57,94 @@ form, #reaction, #had-before {
 
 option {
     color: black;
+}
+
+#description{
+	margin: 30px;
+}
+
+#survey-form div {
+
+	margin: 30px;
+}
+
+label {
+	padding: 5px;
+/*	border: 2px solid red; */
+	border-radius: 3px;
+	color: #333399;
+}
+
+input {
+
+	background: none;
+	border: none;
+	padding: 5px;
+	border-bottom: 2px dotted gray;
+	color: black;
+
+}
+
+input:focus {
+	background: none;
+	border-bottom: 2px solid gray;
+}
+
+::placeholder {
+	color: #aaaaaa;
+}
+
+input:focus::placeholder {
+	color: #cccccc;
+}
+
+#number {
+
+	width: 70px;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+input[type=radio] {
+
+	margin: 10px;
+}
+
+input[type=checkbox] {
+
+	margin: 10px;
+}
+
+.text-area {
+
+	width: 90%;
+
+}
+
+textarea {
+
+	width: 100%;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+button {
+
+	width: 50%;
+	margin: auto;
+
 }
 
 /* adjustments for smaller screens */
@@ -54,7 +161,6 @@ option {
 		max-width: 55%;
 	}
 }
-
 	
 @media(max-width: 600px){
 	#tribute-info, #find-out-more {
@@ -70,6 +176,10 @@ option {
 	.video{
 		padding-bottom: 36%;
 		width: 48%;
+	}
+
+	.text-area {
+		width: 70%;
 	}
 }
 	

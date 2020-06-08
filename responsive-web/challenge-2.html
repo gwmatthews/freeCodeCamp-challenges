@@ -15,42 +15,54 @@
         <h1 id="title">Balkan Local</h1>
     </header>
     <main>
+        
         <p id="description">
             Please tell us about your experience dining with us!
         </p>
+    
         <form id="survey-form">
+
             <div>
-            <label for="name" id="name-label">name:</label>
+            <label for="name" id="name-label">name:
             <input type="text" id="name" name="name" required placeholder="John Doe">
+            </label>
             </div>
 
             <div>
-            <label for="email" required id="email-label">email:</label>
+            <label for="email" required id="email-label">email:
             <input type="email" id="email" name="email" placeholder="mymail@mail.com" required>
             </div>
+            </label>
 
             <div>
-            <label for="number" id="number-label" >On a scale of 1-10 with 10 being the best, how was your meal?</label>
+            <label for="number" id="number-label" >On a scale of 1-10 with 10 being the best, how was your meal?
             <input type="number" id="number" name="number" min="1" max="10" placeholder="1-10" required>
+            </label>
             </div>
 
+            <div>
+            <label for="value">How was the food for the money?
 
-            <label for="value">How was the food for the money?</label>
             <select id="dropdown" name="value">
+                    <option hidden disabled selected value> -- select an option -- </option>
                     <option value="good value">good value</option>
                     <option value="average value">average value</option>
                     <option value="a bit expensive">a bit expensive</option>
                     <option value="overpriced">overpriced</option>
             </select>
-           
+            </label>
+            </div>
 
+            <div>
             <label id="reaction"> How did you like your meal?
                 <span><input type="radio" name="pick-one" value="loved"> I loved it and will definitely come back again.</span>
                 <span><input type="radio" name="pick-one" value="liked"> It was not bad, and I might come back some time.</span>
                 <span><input type="radio" name="pick-one" value="meh"> Meh, it was OK.</span>
                 <span><input type="radio" name="pick-one" value="hated"> I hated it and won't come back again.</span>
             </label>
+            </div>
 
+            <div>
             <label id="had-before"> Which of these items had you heard of or had before stopping by Balkan Local?
                 <span><input type="checkbox" name="which-foods" value="burek"> Burek</span>
                 <span><input type="checkbox" name="which-foods" value="pleskavica"> Pleskavica</span>
@@ -58,8 +70,11 @@
                 <span><input type="checkbox" name="which-foods" value="gogos"> Gogos</span>
                 <span><input type="checkbox" name="which-foods" value="gogos"> none of them</span>
             </label>
-
-            <textarea id="comments" placeholder="Tell me more!" rows="3" cols="25"></textarea>
+            </div>
+            <div class="text-area">
+            <textarea id="comments" placeholder="Tell us more!" rows="3"></textarea>
+            </div>
+            
             <button type="submit" id="submit">submit</button>
 
 
