@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Responsive Web Challenge 2: form</title>
+
+    
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+
+       
+        <div><img src="img/title-decoration.png" alt="decoration" id="header-image" class="responsive"></div>
+        <h1 id="title">food-web.org</h1>
+        <div><img src="img/title-decoration.png" alt="decoration" id="header-image-flip" class="responsive"></div>
+
+
+
+    </header>
+
+    <main>
+        <p id="description">
+            Welcome to <strong>food-web</strong>, a local community organization devoted to connecting those with food to share and those in need. If you'd like to participate, please fill out the contact information below and tell us whether you would like to give food, get food or do a bit of both.
+        </p>
+        <form id="survey-form" action="">
+
+            <!--  PERSONAL INFO  -->
+
+            
+                <fieldset>
+                    <legend>contact information</legend>
+                    <label for="name" id="name-label">name:
+                    <input type="text" name="name" id="name" required placeholder="Firstname Lastname">
+                    </label>
+    
+                    <label for="email" id="email-label">email:
+                    <input type="email" name="email" id="email" required placeholder="me@email.com">
+                    </label>
+    
+                    <label for="number" id="number-label">household size:
+                    <input type="number" name="number" id="number" required placeholder="#" min="1" max="20">
+                    </label>
+    
+                    <label for="dropdown" id="dropdown-label">dietary preference
+    
+                    <select name="dropdown" id="dropdown">
+                        <option value="omnivore">no preference</option>
+                        <option value="vegetarian">vegetarian</option>
+                        <option value="vegan">vegan</option>
+                        <option value="other">other (describe in comments below)</option>
+                    </select>
+                </label>
+                </fieldset>
+            
+            
+            <!--  GIVING/GETTING  -->
+                    <p>My role here.</p>
+
+                    <input type="radio" name="give-get" value="give" id="give">
+                    <label for="give">
+                    I have food to give.
+                    </label>
+                    
+                    
+                    <input type="radio" name="give-get" value="get" id="get">
+                    <label for="get">I would like to get food.</label>
+                    
+                    
+                    <input type="radio" name="give-get" value="give-and-get" id="give-and-get">
+                    <label for="give-and-get">I'd like to give and receive food.</label>
+                    
+                    
+                
+            <!-- GIVE -->
+
+            
+                    <p>Food I can give.</p>
+                
+                    <input type="checkbox" name="food" value="vegetables" id="give-veg">
+                    <label for="give-veg">fresh vegetables</label>
+                    
+                    <input type="checkbox" name="food" value="fruit" id="give-fruit">
+                    <label for="give-fruit">fresh fruit</label>
+                
+                    <input type="checkbox" name="food" value="pantry" id="give-pantry">
+                    <label for="give-pantry">canned or dry goods</label>
+                
+                    <input type="checkbox" name="food" value="baked" id="give-baked">
+                    <label for="give-baked">fresh baked goods</label>
+                
+                    <input type="checkbox" name="food" value="refrigerated" id="give-refrigerated">
+                    <label for="give-refrigerated">refrigerated items</label>
+                
+            
+             <!-- Get -->
+
+            
+                    <p>Food I'd like to receive.</p>
+                
+                    <input type="checkbox" name="food" value="vegetables" id="get-veg">
+                    <label for="get-veg">fresh vegetables</label>
+                
+                    <input type="checkbox" name="food" value="fruit" id="get-fruit">
+                    <label for="get-fruit">fresh fruit</label>
+                
+                    <input type="checkbox" name="food" value="pantry" id="get-pantry">
+                    <label for="get-pantry">canned or dry goods</label>
+                
+                    <input type="checkbox" name="food" value="baked" id="get-baked">
+                    <label for="get-baked">fresh baked goods</label>
+                
+                    <input type="checkbox" name="food" value="refrigerated" id="get-refrigerated">
+                    <label for="get-refrigerated">refrigerated items</label>
+                
+
+           
+
+            <!--  COMMENTS  -->
+
+            
+            <textarea name="comments" id="comments" placeholder="Any other questions, comments or information."></textarea>
+
+           
+            <button id="submit">sign up</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>george w. matthews</p>
+        <p>icons by <a href="http://www.aha-soft.com/">aha soft</a></p>
+        <img src="img/flowers.png" alt="decoration" class="responsive">
+    </footer>
+</body>
+
+</html>

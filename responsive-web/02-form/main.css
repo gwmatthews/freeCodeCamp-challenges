@@ -1,0 +1,280 @@
+/* base style */
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+        body * {
+            font-family: 'Kalam', cursive;
+        }
+
+:root {
+	--shadow: 1px 2px 3px rgba(10, 4, 4, 0.5);
+	--light-shadow: 1px 2px 3px rgba(10, 4, 4, 0.2);
+}
+
+html{
+	width: 100%;
+	font-size: 1em + 0.5vw; 
+}
+
+body{
+	 background: #adf0cb; 
+	 padding: 20px;
+} 
+
+header {
+	text-align: center;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	background: linear-gradient(lemonchiffon,  #adf0cb);
+	border-radius: 20px;
+}
+
+h1 {
+	font-size: 2em;
+  margin: 0;
+}
+
+p {
+	font-size: 1em;
+	margin: 1em 1em;
+	padding: 0 3em;
+	line-height: 1.5;
+}
+
+#description {
+	margin: 0.5em 2em;
+}
+
+footer {
+	border-radius: 20px;
+	background: linear-gradient(#adf0cb, lemonchiffon);
+}
+
+footer p{
+	text-align: center;
+  font-size: smaller;
+}
+
+/* images */
+
+.responsive {
+	max-width: 50%;
+	height: auto;
+}
+
+#header-image-flip {
+	transform: rotateX(180deg);
+}
+
+/* form */
+
+form {
+	margin: 1em;
+	padding: 1em;
+}
+
+label {
+	display: block;
+	margin: 0 0 10px;
+}
+
+form p {
+	display: inline-block;
+	font-size: 1em;
+	margin: 2em 1em 2em 1em;
+	line-height: 1.5;
+	font-weight: bold;
+	padding: 1em;
+	background-color: hsla(105, 94%, 87%, 0.3);
+	border-radius: 20px;
+	box-shadow: var(--light-shadow);
+
+}
+
+
+/* contact info */
+
+fieldset {
+
+	padding: 20px;
+	border: 1px solid hsla(105, 94%, 87%, 0.4);
+	background-color: hsla(105, 94%, 87%, 0.4);
+	border-radius: 20px;
+	box-shadow: var(--light-shadow);
+} 
+
+legend {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: hsla(105, 94%, 87%, 0.4);
+	box-shadow: var(--light-shadow);
+}
+
+input[type="text"], input[type="email"], #dropdown  {
+	border: 1px solid hsla(105, 94%, 87%, 0.3);
+	background-color: hsla(105, 94%, 87%, 0.4);
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+#number {
+	border: 5px solid hsla(105, 94%, 87%, 0.3);
+	background-color: hsla(105, 94%, 87%, 0.4);
+	font-size: 1em;
+	width: 2em;
+	text-align: center;
+	border-radius: 10px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, #dropdown:focus, #number:focus {
+	outline: none;
+	caret-color: rgb(226, 77, 50);
+	background-color: hsla(105, 94%, 90%, 0.9);
+	border-radius: 10px;
+}
+
+/* radio buttons and checkboxes*/
+
+input[type="radio"], input[type="checkbox"] {
+	opacity: 0;
+	
+}
+
+label[for="give"], label[for="get"], label[for="give-and-get"] {
+	margin-bottom: 20px;
+	padding-left: 60px;
+	background: url(img/circle.png) no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+	color: #444;
+	line-height: 34px;
+  opacity: 0.7;
+}
+
+input:checked + label[for="give"], 
+input:checked + label[for="get"], 
+input:checked + label[for="give-and-get"] {
+
+	background: url(img/check.png) no-repeat;
+	background-position: 0 2px;
+	color: black;
+  opacity: 1;
+}
+
+
+label[for="give-veg"], 
+label[for="give-fruit"], 
+label[for="give-pantry"], 
+label[for="give-baked"], 
+label[for="give-refrigerated"],
+label[for="get-veg"], 
+label[for="get-fruit"], 
+label[for="get-pantry"], 
+label[for="get-baked"], 
+label[for="get-refrigerated"] {
+	margin-bottom: 20px;
+	padding-left: 60px;
+	background: url(img/square.png) no-repeat;
+	background-position: 0 0px;
+  opacity: 0.7;
+	cursor: pointer;
+	color: #444;
+	line-height: 34px;
+}
+
+input:checked + label[for="give-veg"], 
+input:checked + label[for="give-fruit"], 
+input:checked + label[for="give-pantry"], 
+input:checked + label[for="give-baked"], 
+input:checked + label[for="give-refrigerated"],
+input:checked + label[for="get-veg"], 
+input:checked + label[for="get-fruit"], 
+input:checked + label[for="get-pantry"], 
+input:checked + label[for="get-baked"], 
+input:checked + label[for="get-refrigerated"] {
+
+	background: url(img/add.png) no-repeat;
+	background-position: 0 1px;
+	color: black;
+  opacity: 1;
+}
+
+
+/* comments */
+
+#comments {
+	width: 90%;
+	margin: auto;
+	margin-top: 2em;
+  margin-bottom: 2em;
+	padding: 1em;
+	border: 1px solid hsla(105, 94%, 87%, 0.3);
+	background-color: hsla(105, 94%, 87%, 0.4);
+	font-size: 1em;
+	border-radius: 10px;
+  min-height: 6em;
+}
+
+#comments:focus {
+	outline: none;
+	caret-color: rgb(226, 77, 50);
+	background-color: hsla(105, 94%, 90%, 0.9);
+	border-radius: 10px;
+}
+
+/* button */
+
+button {
+	display: block;
+	padding: 20px;
+	width: 30%;
+	margin: auto;
+	border: 1px solid hsla(105, 94%, 87%, 0.3);
+	background-color: rgba(255, 250, 205, 0.2);
+	font-size: 1em;
+	border-radius: 10px;
+	box-shadow: var(--light-shadow);
+}
+
+button:hover {
+transform: scale(1.02,1.02);
+box-shadow: var(--shadow);
+}
+
+@media (max-width: 700px){
+  body {
+ padding: 5px;
+}  
+
+	main {
+		font-size: 4vw; 
+		margin-left: 0;
+	}
+	button {
+		width: 60%;
+	}
+
+form p {
+   width: 70%;
+ }
+
+}
+
+@media (min-width: 900px){
+	main {
+		font-size: calc(1em + 0.5vw);
+		margin-left: 1em;
+	}
+
+button {
+		width: 60%;
+	}
+
+}
+
+@media (min-width: 1000px){
+	main {
+		margin-left: 6em;
+	}
+}
+
