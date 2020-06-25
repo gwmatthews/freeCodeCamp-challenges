@@ -7,48 +7,47 @@
     <link rel="stylesheet" href="main.css">
     <title>Responsive Web Challenge 2: form</title>
 
-    
 </head>
 
 <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header>
 
-       
+    <header>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
         <div><img src="img/title-decoration.png" alt="decoration" id="header-image"></div>
         <h1 id="title">food-web.org</h1>
         <div><img src="img/title-decoration.png" alt="decoration" id="header-image-flip"></div>
 
-
-
     </header>
 
     <main>
-        <p id="description">
-            Welcome to <strong>food-web</strong>, a local community organization devoted to connecting those with food to share and those in need. If you'd like to participate, please fill out the contact information below and tell us whether you would like to give food, get food or do a bit of both.
-        </p>
+        <div id="description">
+            Welcome to <strong>food-web</strong>, a local community organization devoted to connecting those with food
+            to share and those in need. If you'd like to participate, please fill out the contact information below and
+            tell us whether you would like to give food, get food or do a bit of both.
+        </div>
         <form id="survey-form" action="">
 
             <!--  PERSONAL INFO  -->
 
-<p class="blurb" id="contact-label">contact information</p>            
+            <p class="blurb" id="contact-label">contact information</p>
 
-                <div id="contact">
-                    
-                    <label for="name" id="name-label">name:
+            <div id="contact">
+
+                <label for="name" id="name-label">name:
                     <input type="text" name="name" id="name" required placeholder="Firstname Lastname">
-                    </label>
-    
-                    <label for="email" id="email-label">email:
+                </label>
+
+                <label for="email" id="email-label">email:
                     <input type="email" name="email" id="email" required placeholder="me@email.com">
-                    </label>
-    
-                    <label for="number" id="number-label">household size:
+                </label>
+
+                <label for="number" id="number-label">household size:
                     <input type="number" name="number" id="number" required placeholder="#" min="1" max="40">
-                    </label>
-    
-                    <label for="dropdown" id="dropdown-label">dietary preference
-    
+                </label>
+
+                <label for="dropdown" id="dropdown-label">dietary preference
+
                     <select name="dropdown" id="dropdown">
                         <option value="omnivore">no preference</option>
                         <option value="vegetarian">vegetarian</option>
@@ -56,86 +55,75 @@
                         <option value="other">other (describe in comments below)</option>
                     </select>
                 </label>
-                </div>
-            
-            
-            <!--  GIVING/GETTING  -->
-                    <p class="blurb" id="join">I want to join because</p>
+            </div>
 
-                    <input type="radio" name="give-get" value="give" id="give">
-                    <label for="give">
-                    I have food to give.
-                    </label>
-                    
-                    
-                    <input type="radio" name="give-get" value="get" id="get">
-                    <label for="get">I'd like to get food.</label>
-                    
-                    
-                    <input type="radio" name="give-get" value="give-and-get" id="give-and-get">
-                    <label for="give-and-get">I'd like to give and receive food.</label>
-                    
-                    
-                
+            <!--  GIVING/GETTING  -->
+            <p class="blurb" id="join">I want to join because</p>
+
+            <input type="radio" name="give-get" value="give" id="give">
+            <label for="give">
+                I have food to give.
+            </label>
+
+            <input type="radio" name="give-get" value="get" id="get">
+            <label for="get">I'd like to get food.</label>
+
+            <input type="radio" name="give-get" value="give-and-get" id="give-and-get">
+            <label for="give-and-get">I'd like to give and receive food.</label>
+
             <!-- GIVE -->
 
-            
-                    <p class="blurb" id="to-give">What I can give</p>
-                
-                    <input type="checkbox" name="food" value="vegetables" id="give-veg">
-                    <label for="give-veg">fresh vegetables</label>
-                    
-                    <input type="checkbox" name="food" value="fruit" id="give-fruit">
-                    <label for="give-fruit">fresh fruit</label>
-                
-                    <input type="checkbox" name="food" value="pantry" id="give-pantry">
-                    <label for="give-pantry">canned or dry goods</label>
-                
-                    <input type="checkbox" name="food" value="baked" id="give-baked">
-                    <label for="give-baked">fresh baked goods</label>
-                
-                    <input type="checkbox" name="food" value="refrigerated" id="give-refrigerated">
-                    <label for="give-refrigerated">refrigerated items</label>
-                
-            
-             <!-- Get -->
+            <p class="blurb" id="to-give">What I can give</p>
 
-            
-                    <p class="blurb" id="need">What I need</p>
-                
-                    <input type="checkbox" name="food" value="vegetables" id="get-veg">
-                    <label for="get-veg">fresh vegetables</label>
-                
-                    <input type="checkbox" name="food" value="fruit" id="get-fruit">
-                    <label for="get-fruit">fresh fruit</label>
-                
-                    <input type="checkbox" name="food" value="pantry" id="get-pantry">
-                    <label for="get-pantry">canned or dry goods</label>
-                
-                    <input type="checkbox" name="food" value="baked" id="get-baked">
-                    <label for="get-baked">fresh baked goods</label>
-                
-                    <input type="checkbox" name="food" value="refrigerated" id="get-refrigerated">
-                    <label for="get-refrigerated">refrigerated items</label>
-                
+            <input type="checkbox" name="food" value="vegetables" id="give-veg">
+            <label for="give-veg">fresh vegetables</label>
 
-           
+            <input type="checkbox" name="food" value="fruit" id="give-fruit">
+            <label for="give-fruit">fresh fruit</label>
+
+            <input type="checkbox" name="food" value="pantry" id="give-pantry">
+            <label for="give-pantry">canned or dry goods</label>
+
+            <input type="checkbox" name="food" value="baked" id="give-baked">
+            <label for="give-baked">fresh baked goods</label>
+
+            <input type="checkbox" name="food" value="refrigerated" id="give-refrigerated">
+            <label for="give-refrigerated">refrigerated items</label>
+
+            <!-- Get -->
+
+            <p class="blurb" id="need">What I need</p>
+
+            <input type="checkbox" name="food" value="vegetables" id="get-veg">
+            <label for="get-veg">fresh vegetables</label>
+
+            <input type="checkbox" name="food" value="fruit" id="get-fruit">
+            <label for="get-fruit">fresh fruit</label>
+
+            <input type="checkbox" name="food" value="pantry" id="get-pantry">
+            <label for="get-pantry">canned or dry goods</label>
+
+            <input type="checkbox" name="food" value="baked" id="get-baked">
+            <label for="get-baked">fresh baked goods</label>
+
+            <input type="checkbox" name="food" value="refrigerated" id="get-refrigerated">
+            <label for="get-refrigerated">refrigerated items</label>
 
             <!--  COMMENTS  -->
 
             <label class="blurb" for="comments">Comments</label>
-            <textarea name="comments" id="comments" placeholder="Please add additional comments, questions or concerns here."></textarea>
+            <textarea name="comments" id="comments"
+                placeholder="Please add additional comments, questions or concerns here."></textarea>
 
-           
             <button id="submit">sign up</button>
         </form>
 
     </main>
     <footer>
         <p>george w. matthews, freeCodeCamp Responsive Web challenge 2</p>
-        <p>icons by <a href="http://www.aha-soft.com/">aha soft</a> and <a href="https://www.deviantart.com/mattahan">Mattahan</a></p>
+        <p>icons by <a href="http://www.aha-soft.com/">aha soft</a> and <a
+                href="https://www.deviantart.com/mattahan">Mattahan</a></p>
         <img src="img/flowers.png" alt="decoration" id="footer-image">
     </footer>
 </body>
-
 </html>

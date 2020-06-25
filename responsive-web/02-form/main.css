@@ -12,54 +12,55 @@ body * {
 }
 
 html{
-	width: 100%;
-	font-size: 2em; 
+	background: #bef1dc; 
+	font-size: calc(0.75em + 1vw); 
+	text-size-adjust: auto;
 }
 
 body{
-	 background: #bef1dc; 
-	 padding: 20px;
+	 margin: auto;
+	 /* padding: 5px; */
+	 width: 90%;
 } 
 
-/* #adf0cb */
+p {
+	margin: 10px;
+	padding: 0 10px;
+	line-height: 1.5;
+}
+
+#description {
+	margin: 5px 10px;
+	padding: 5px;
+}
+
+/* header and footer */
 
 header {
+	margin: 2em 10px;
+	padding: 10px;
 	text-align: center;
-	margin-bottom: 2em;
-	padding-bottom: 1em;
 	background: linear-gradient(lemonchiffon,  #bef1dc);
 	border-radius: 20px;
 }
 
 h1 {
 	font-size: 2.5em;
-	margin: 0;
+	margin: 10px;
 	color: rgb(92, 41, 12);
 	text-shadow: 1px 2px 5px darkgreen;
 }
 
-p {
-	font-size: 1em;
-	margin: 1em 1em;
-	padding: 0 2em;
-	line-height: 1.5;
-}
-
-#description {
-	margin: 0.5em 2em;
-}
-
 footer {
+	margin: 2em 10px;
 	border-radius: 20px;
 	background: linear-gradient(#bef1dc, lemonchiffon);
 }
 
 footer p{
 	text-align: center;
-  font-size: smaller;
+    font-size: smaller;
 }
-
-/* images */
 
 #header-image {
 	width: 40%;
@@ -71,15 +72,16 @@ footer p{
 }
 
 #footer-image {
-	width: 600px;
+	width: 50%;
+	max-width: 600px;
 	height: auto;
 }
 
 /* form */
 
 form {
-	margin: 1em;
-	padding: 1em;
+	margin: 10px;
+	padding: 10px;
 }
 
 label {
@@ -89,7 +91,7 @@ label {
 
 .blurb {
   display: inline-block;
-  margin: 3em 1em 2em 1em;
+  margin: 4em 1em 2em 1em;
   padding: 20px 20px 20px 80px;
   width: auto;
   line-height: 1.5;
@@ -102,13 +104,14 @@ label {
 /* contact info */
 
 #contact {
-
-	padding: 20px;
+	padding: 10px;
 	border: 1px solid hsla(105, 94%, 87%, 0.4);
 	background-color: hsla(105, 94%, 87%, 0.4);
 	border-radius: 20px;
 	box-shadow: var(--light-shadow);
-    max-width: 1000px;
+	width: 80%;
+	min-width: 280px;
+	margin: auto;
 } 
 
 input[type="text"], input[type="email"], #dropdown  {
@@ -141,7 +144,6 @@ input[type="email"]:focus,
 	outline: none;
 	caret-color: rgb(226, 77, 50);
 	background-color: hsla(105, 94%, 93%, 0.9);
-	
 }
 
 input[type="text"]:valid, 
@@ -152,7 +154,8 @@ input[type="number"]:valid {
 	color: darkgreen;
 }
 
-/* Chrome, Safari, Edge, Opera */
+/* remove spin buttons 
+   Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -176,7 +179,7 @@ label[for="give"],
 label[for="get"], 
 label[for="give-and-get"] {
 	margin-bottom: 10px;
-	margin-left: 100px;
+	margin-left: 10%;
 	padding-left: 60px;
 	background: url(img/circle.png) no-repeat;
 	background-position: 0 0;
@@ -189,7 +192,6 @@ label[for="give-and-get"] {
 input:checked + label[for="give"], 
 input:checked + label[for="get"], 
 input:checked + label[for="give-and-get"] {
-
 	background: url(img/check.png) no-repeat;
 	background-position: 0 2px;
 	color: black;
@@ -207,7 +209,7 @@ label[for="get-pantry"],
 label[for="get-baked"], 
 label[for="get-refrigerated"] {
 	margin-bottom: 10px;
-	margin-left: 100px;
+	margin-left: 10%;
 	padding-left: 60px;
 	background: url(img/square.png) no-repeat;
 	background-position: 0 0px;
@@ -227,7 +229,6 @@ input:checked + label[for="get-fruit"],
 input:checked + label[for="get-pantry"], 
 input:checked + label[for="get-baked"], 
 input:checked + label[for="get-refrigerated"] {
-
 	background: url(img/add.png) no-repeat;
 	background-position: 0 1px;
 	color: black;
@@ -238,16 +239,13 @@ input:checked + label[for="get-refrigerated"] {
 
 #comments {
 	width: 90%;
-	margin: auto;
-	margin-top: 0.5em;
-    margin-bottom: 2em;
- 	padding: 1em;
+	margin: 10px;
+ 	padding: 10px;
 	border: 1px solid hsla(105, 94%, 87%, 0.3);
 	background-color: hsla(105, 94%, 87%, 0.4);
 	font-size: 1em;
 	border-radius: 10px;
     min-height: 6em;
-
 }
 
 #comments:hover{
@@ -266,8 +264,9 @@ input:checked + label[for="get-refrigerated"] {
 button {
 	display: block;
 	padding: 20px;
-	width: 30%;
-	margin: auto;
+	width: 50%;
+	max-width: 200px;
+	margin: 3em auto;
 	border: 1px solid hsla(105, 94%, 87%, 0.3);
 	background-color: rgba(255, 250, 205, 0.2);
 	font-size: 1em;
@@ -282,35 +281,7 @@ box-shadow: var(--light-shadow);
 
 @media (max-width: 700px){
 	
-	html {
-		font-size: 1.5em;
-	}
-
-	body {
-		padding: 5px;
-	}
-
-	#description {
-		margin: 1em;
-	}
-
-	#header-image, #header-image-flip {
-		width: 300px;
-	}
-
-	#footer-image {
-		width: 400px;
-		height: auto;
-	}
-
-	button {
-		width: 60%;
+	.blurb {
+		margin-top: 2em;
 	}
 }
-  
-@media (min-width: 1500px){
-	main, footer {
-		margin-left: 8em;
-	}
-}
-
