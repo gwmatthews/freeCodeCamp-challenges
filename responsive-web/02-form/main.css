@@ -141,12 +141,11 @@ input[type="text"]:focus, input[type="email"]:focus, #dropdown:focus, #number:fo
 	outline: none;
 	caret-color: rgb(226, 77, 50);
 	background-color: hsla(105, 94%, 93%, 0.9);
-	border-radius: 10px;
+	
 }
 
 input[type="text"]:valid, input[type="email"]:valid, input[type="number"]:valid {
-  box-sizing: border-box;
-	border: 3px solid hsl(120, 73%, 83%);
+	border-color: hsl(120, 73%, 83%);
 	background-color: hsla(105, 94%, 87%, 0.4);
 	color: darkgreen;
 }
