@@ -314,7 +314,7 @@ button {
   
 
 @media (min-width: 1500px){
-	main {
+	main, footer {
 		
 		margin-left: 8em;
 	}
