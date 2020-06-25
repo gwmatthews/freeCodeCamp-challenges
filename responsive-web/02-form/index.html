@@ -15,9 +15,9 @@
     <header>
 
        
-        <div><img src="img/title-decoration.png" alt="decoration" id="header-image" class="responsive"></div>
+        <div><img src="img/title-decoration.png" alt="decoration" id="header-image"></div>
         <h1 id="title">food-web.org</h1>
-        <div><img src="img/title-decoration.png" alt="decoration" id="header-image-flip" class="responsive"></div>
+        <div><img src="img/title-decoration.png" alt="decoration" id="header-image-flip"></div>
 
 
 
@@ -31,9 +31,10 @@
 
             <!--  PERSONAL INFO  -->
 
-            
-                <fieldset>
-                    <legend>contact information</legend>
+<p class="blurb" id="contact-label">contact information</p>            
+
+                <div id="contact">
+                    
                     <label for="name" id="name-label">name:
                     <input type="text" name="name" id="name" required placeholder="Firstname Lastname">
                     </label>
@@ -43,7 +44,7 @@
                     </label>
     
                     <label for="number" id="number-label">household size:
-                    <input type="number" name="number" id="number" required placeholder="#" min="1" max="20">
+                    <input type="number" name="number" id="number" required placeholder="#" min="1" max="40">
                     </label>
     
                     <label for="dropdown" id="dropdown-label">dietary preference
@@ -55,11 +56,11 @@
                         <option value="other">other (describe in comments below)</option>
                     </select>
                 </label>
-                </fieldset>
+                </div>
             
             
             <!--  GIVING/GETTING  -->
-                    <p>My role here.</p>
+                    <p class="blurb" id="join">I want to join because</p>
 
                     <input type="radio" name="give-get" value="give" id="give">
                     <label for="give">
@@ -68,7 +69,7 @@
                     
                     
                     <input type="radio" name="give-get" value="get" id="get">
-                    <label for="get">I would like to get food.</label>
+                    <label for="get">I'd like to get food.</label>
                     
                     
                     <input type="radio" name="give-get" value="give-and-get" id="give-and-get">
@@ -79,7 +80,7 @@
             <!-- GIVE -->
 
             
-                    <p>Food I can give.</p>
+                    <p class="blurb" id="to-give">What I can give</p>
                 
                     <input type="checkbox" name="food" value="vegetables" id="give-veg">
                     <label for="give-veg">fresh vegetables</label>
@@ -100,7 +101,7 @@
              <!-- Get -->
 
             
-                    <p>Food I'd like to receive.</p>
+                    <p class="blurb" id="need">What I need</p>
                 
                     <input type="checkbox" name="food" value="vegetables" id="get-veg">
                     <label for="get-veg">fresh vegetables</label>
@@ -122,8 +123,8 @@
 
             <!--  COMMENTS  -->
 
-            
-            <textarea name="comments" id="comments" placeholder="Any other questions, comments or information."></textarea>
+            <label class="blurb" for="comments">Comments</label>
+            <textarea name="comments" id="comments" placeholder="Please add additional comments, questions or concerns here."></textarea>
 
            
             <button id="submit">sign up</button>
@@ -132,8 +133,8 @@
     </main>
     <footer>
         <p>george w. matthews</p>
-        <p>icons by <a href="http://www.aha-soft.com/">aha soft</a></p>
-        <img src="img/flowers.png" alt="decoration" class="responsive">
+        <p>icons by <a href="http://www.aha-soft.com/">aha soft</a> and <a href="https://www.deviantart.com/mattahan">Mattahan</a></p>
+        <img src="img/flowers.png" alt="decoration" id="footer-image">
     </footer>
 </body>
 
