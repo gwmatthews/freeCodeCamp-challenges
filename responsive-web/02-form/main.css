@@ -2,9 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
-        body * {
-            font-family: 'Kalam', cursive;
-        }
+body * {
+   font-family: 'Kalam', cursive;
+}
 
 :root {
 	--shadow: 1px 2px 3px rgba(10, 4, 4, 0.5);
@@ -61,8 +61,6 @@ footer p{
 
 /* images */
 
-
-
 #header-image {
 	width: 40%;
 }
@@ -71,7 +69,6 @@ footer p{
 	width: 40%;
 	transform: rotateX(180deg);
 }
-
 
 #footer-image {
 	width: 600px;
@@ -90,7 +87,6 @@ label {
 	margin: 0 0 5px;
 }
 
-
 .blurb {
   display: inline-block;
   margin: 3em 1em 2em 1em;
@@ -102,8 +98,6 @@ label {
   border-radius: 20px;
   box-shadow: var(--light-shadow);
 }
-
-
 
 /* contact info */
 
@@ -133,23 +127,30 @@ input[type="text"], input[type="email"], #dropdown  {
 	border-radius: 10px;
 }
 
-input[type="text"]:hover, input[type="email"]:hover, #dropdown:hover,      #number:hover {
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+#dropdown:hover, 
+#number:hover {
 	background-color: hsla(105, 94%, 90%, 0.9);
 }
 
-input[type="text"]:focus, input[type="email"]:focus, #dropdown:focus, #number:focus {
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+#dropdown:focus, 
+#number:focus {
 	outline: none;
 	caret-color: rgb(226, 77, 50);
 	background-color: hsla(105, 94%, 93%, 0.9);
 	
 }
 
-input[type="text"]:valid, input[type="email"]:valid, input[type="number"]:valid {
+input[type="text"]:valid, 
+input[type="email"]:valid, 
+input[type="number"]:valid {
 	border-color: hsl(120, 73%, 83%);
 	background-color: hsla(105, 94%, 87%, 0.4);
 	color: darkgreen;
 }
-
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -171,7 +172,9 @@ input[type="radio"], input[type="checkbox"] {
 	margin: 0;
 }
 
-label[for="give"], label[for="get"], label[for="give-and-get"] {
+label[for="give"], 
+label[for="get"], 
+label[for="give-and-get"] {
 	margin-bottom: 10px;
 	margin-left: 100px;
 	padding-left: 60px;
@@ -192,7 +195,6 @@ input:checked + label[for="give-and-get"] {
 	color: black;
     opacity: 1;
 }
-
 
 label[for="give-veg"], 
 label[for="give-fruit"], 
@@ -232,9 +234,7 @@ input:checked + label[for="get-refrigerated"] {
     opacity: 1;
 }
 
-
 /* comments */
-
 
 #comments {
 	width: 90%;
@@ -282,44 +282,35 @@ box-shadow: var(--light-shadow);
 
 @media (max-width: 700px){
 	
-  html {
-
-	font-size: 1.5em; 
-
-  }
-
-body {
-	padding: 5px;
-}
-
-
-#description {
-	margin: 1em;
-}
-
-#header-image, #header-image-flip {
-	width: 300px;
-}
-
-#footer-image {
-	width: 400px;
-	height: auto;
-}
-
-button {
-	width: 60%;
-}
-
-}
-  
-
-@media (min-width: 1500px){
-	main, footer {
-		
-		margin-left: 8em;
+	html {
+		font-size: 1.5em;
 	}
 
-    
+	body {
+		padding: 5px;
+	}
 
+	#description {
+		margin: 1em;
+	}
+
+	#header-image, #header-image-flip {
+		width: 300px;
+	}
+
+	#footer-image {
+		width: 400px;
+		height: auto;
+	}
+
+	button {
+		width: 60%;
+	}
+}
+  
+@media (min-width: 1500px){
+	main, footer {
+		margin-left: 8em;
+	}
 }
 
