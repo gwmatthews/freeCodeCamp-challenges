@@ -1,9 +1,7 @@
 /* base style */
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-
 body * {
-   font-family: 'Kalam', cursive;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 :root {
@@ -99,6 +97,7 @@ label {
   background-position: 5px 13px;
   border-radius: 20px;
   box-shadow: var(--light-shadow);
+  font-style: italic;
 }
 
 /* contact info */
